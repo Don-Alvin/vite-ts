@@ -1,6 +1,10 @@
-const Heading = () => {
+import { ReactElement } from "react"
+
+type HeadingProps = {title: string}
+
+const Heading = ({title}: HeadingProps): ReactElement => {
   return (
-    <div>Heading</div>
+    <h1>{title}</h1>
   )
 }
 
